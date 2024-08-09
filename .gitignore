@@ -5,3 +5,9 @@ node_modules/
 **/*.sh
 .idea
 .env
+database
+optional advanced SQL
+QA-session-content
+async-create-insert.js
+generate_big_table.js
+ 
