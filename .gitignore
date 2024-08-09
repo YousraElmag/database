@@ -1,13 +1,27 @@
+# Ignore node_modules directory
 node_modules/
+
+# Ignore any directory named node_modules
 */node_modules/
-**/*.DS_Store
-**/*-secret.json
-**/*.sh
-.idea
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore any files with "-secret.json" in their name
+*-secret.json
+
+# Ignore shell scripts
+*.sh
+
+# Ignore JetBrains IDE files
+.idea/
+
+# Ignore environment variables
 .env
-database
-optional advanced SQL
-QA-session-content
+
+# Ignore specific directories or files
+database/
+optional advanced SQL/
+QA-session-content/
 async-create-insert.js
 generate_big_table.js
- 
