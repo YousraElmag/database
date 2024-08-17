@@ -1,0 +1,8 @@
+Was your database already in 2NF / 3 NF?
+
+The tables Recipe, Category, Ingredient, and Step all have a single-column primary key, so they automatically comply with 2NF.
+Recipe, Category, Ingredient, and Step tables are already in 3NF because they do not have any non-key attributes that depend on other non-key attributes.
+In RecipeCategory, RecipeIngredient, and RecipeStep, the non-key attributes directly depend only on the composite primary keys and have no transitive dependencies.
+What changes did you have to do to normalize your database?
+Separate Junction Tables: Introducing RecipeCategory, RecipeIngredient, and RecipeStep tables to handle many-to-many relationships while preserving normalization.
+Atomic Values: Ensuring that no list or repeated group of values is stored in a single field (e.g., steps and ingredients were stored as separate rows instead of lists)
